@@ -10,10 +10,10 @@ mod_popuui <- function(id){
       ns("one_col"),
       width = 3,
       h3("Select a name"),
-      selectInput(ns("choix"), "Name",
-                selected = "Colin",choices = unique(prenoms::prenoms$name)),
-      # textInput(ns("choix"), "Name",
-      #           value = "Colin"),
+      # selectInput(ns("choix"), "Name",
+      #           selected = "Colin",choices = unique(prenoms::prenoms$name)),
+      textInput(ns("choix"), "Name",
+                value = "Colin"),
 
 
       tagAppendAttributes(checkboxInput(ns("dep"), "Filter by department?", FALSE),
@@ -55,9 +55,18 @@ mod_popu <- function(input, output, session){
     }
   })
 
-  output$dy <- renderDygraph({
-    f <- prenoms::prenoms %>%
+  base_prenom <- reactive({
+    prenoms::prenoms %>%
       filter(name ==  choice$prenom)
+    })
+
+  output$dy <- renderDygraph({
+    f <- base_prenom()
+
+    if ( input$dep){
+      f <- f %>% filter( dpt == input$depchoice)
+      }
+
 
     f %>%
         group_by(year,name) %>%
