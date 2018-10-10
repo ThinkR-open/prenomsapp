@@ -1,20 +1,14 @@
-# This script have to be regularly update to contains all 
-# dependances needed to launch the app ()
+# Remotes ----
+install.packages("remotes")
+remotes::install_github('Thinkr-open/prenoms')
+remotes::install_github('ColinFay/skeleton')
+# Attachments ----
+to_install <- c("dplyr", "DT", "dygraphs", "ggplot2", "glue", "magrittr", "plotly", "shiny", "shinyalert", "tidyr")
+  for (i in to_install) {
+    message(paste("looking for ", i))
+    if (!requireNamespace(i)) {
+      message(paste("     installing", i))
+      install.packages(i)
+    }
 
-# this instruction create the vector you need
-# shinytemplate:::get_dependencies()
-
-
-to_install <- c("DT",
-                "graphics",
-                "shiny",
-                "stats",
-                "glue")
-for (i in to_install) {
-  message(paste("looking for ", i))
-  if (!requireNamespace(i)) {
-    message(paste("     installing", i))
-    install.packages(i)
   }
-  
-}
