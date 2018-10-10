@@ -1,4 +1,4 @@
-## About ThinkR
+### About ThinkR
 
 ThinkR is a french company focused on everything R related. 
 
@@ -10,7 +10,7 @@ ThinkR is a french company focused on everything R related.
 
 + [github.com/ThinkR-open](https://github.com/ThinkR-open)
 
-## Bug report and contact 
+### Bug report and contact 
 
 + [github.com/ThinkR-open](https://github.com/ThinkR-open/prenomsapp/issues)
 

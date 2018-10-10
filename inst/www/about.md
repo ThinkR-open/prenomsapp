@@ -1,23 +1,23 @@
-## Packages & Tech used 
+### Packages & Tech used in prenomsapp
 
-### Deployment
+#### Deployment
 
-+ [Docker]()
-+ [ShinyProxy]()
++ [Docker](https://www.docker.com/)
++ [ShinyProxy](https://www.shinyproxy.io/)
 
-### Visualisation & UI
+#### Visualisation & UI
 
 + [shiny](https://github.com/rstudio/shiny)
-+ [glue](https://github.com/tidyverse/glue)
 + [skeleton](https://github.com/ColinFay/skeleton)
-+ [dygraphs]()
-+ [ggplot2]()
-+ [plotly]()
-+ [jquery]()
++ [dygraphs](https://rstudio.github.io/dygraphs/)
++ [ggplot2](https://github.com/tidyverse/ggplot2)
++ [plotly](https://github.com/ropensci/plotly/)
++ [jquery](https://github.com/jquery/jquery)
 
-### Data Wrangling & Server
+#### Data Wrangling & Server side manipulation
 
-+ [prenoms]()
-+ [dplyr]()
-+ [tidyr]()
-+ [glue]()
++ [prenoms](https://github.com/ThinkR-open/prenoms)
++ [dplyr](https://github.com/tidyverse/dplyr)
++ [tidyr](https://github.com/tidyverse/tidyr)
++ [glue](https://github.com/tidyverse/glue)
+
