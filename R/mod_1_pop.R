@@ -1,8 +1,11 @@
 #' @importFrom dygraphs dygraphOutput renderDygraph
+#' @importFrom shiny h3 tagList NS textInput actionButton
+#' @importFrom shinyalert useShinyalert
+#' @importFrom skeleton sk_col
 mod_popuui <- function(id){
   ns <- NS(id)
   tagList(
-    shinyalert::useShinyalert(),
+    useShinyalert(),
     sk_col(
       ns("one_col"),
       width = 3,
@@ -21,7 +24,9 @@ mod_popuui <- function(id){
 
 #' @importFrom dplyr group_by summarise filter
 #' @importFrom tidyr spread
-#' @importFrom dygraphs dygraph
+#' @importFrom dygraphs dygraph renderDygraph
+#' @importFrom shiny reactiveValues observeEvent
+#' @importFrom shinyalert shinyalert
 
 mod_popu <- function(input, output, session){
 
@@ -31,13 +36,14 @@ mod_popu <- function(input, output, session){
     if (input$choix %in% prenomsapp::prenoms_uniques){
       choice$prenom <- input$choix
     } else {
-      shinyalert::shinyalert("Prénom introuvable", "Désolé, le prénom n'est pas dans la base.", type = "error")
+      shinyalert("Name not found",
+                 "Sorry, this name is not in the database :/", type = "error")
     }
   })
 
   output$dy <- renderDygraph({
 
-      prenoms::prenoms %>%
+    prenoms::prenoms %>%
         filter(name ==  choice$prenom) %>%
         group_by(year,name) %>%
         summarise(total = sum(n))%>%

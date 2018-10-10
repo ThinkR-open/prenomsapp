@@ -1,7 +1,5 @@
-#' @import shiny
-#' @importFrom graphics hist
-#' @importFrom stats rnorm
-#'
+#' @importFrom shiny callModule
+
 app_server <- function(input, output,session) {
 
   if ( app_prod() ){message("prod mode")}else{message("dev mode")}

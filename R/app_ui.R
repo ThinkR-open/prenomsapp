@@ -1,7 +1,7 @@
 
-#' @import shiny
-#' @import skeleton
-#' @import glue
+#' @importFrom shiny includeCSS tags
+#' @importFrom skeleton sk_page sk_header sk_nav sk_nav_item sk_row
+#' @importFrom glue glue
 app_ui <- function() {
   sk_page(
     includeCSS(system.file("www/loader.css", package = "prenomsapp")),

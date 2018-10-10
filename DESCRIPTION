@@ -6,16 +6,15 @@ Description: A Shiny App for Baby Names.
 License: GPL-3
 Imports:
     glue,
-    graphics,
     shiny,
     skeleton,
-    stats,
     dplyr,
     tidyr,
     dygraphs,
     magrittr,
     plotly,
-    ggplot2
+    ggplot2,
+    shinyalert
 Remotes: 
   Thinkr-open/prenoms, 
   ColinFay/skeleton

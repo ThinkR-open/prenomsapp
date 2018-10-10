@@ -1,6 +1,10 @@
+#' @importFrom dygraphs dygraphOutput
+#' @importFrom shiny tagList NS selectInput sliderInput checkboxInput
+#' @importFrom shinyalert useShinyalert
+#' @importFrom skeleton sk_col
+#' @importFrom shiny NS tagList h3 selectInput sliderInput checkboxInput
 mod_departementui <- function(id){
   ns <- NS(id)
-  tagList(
     tagList(
       sk_col(
         ns("Choix"), width = 3,
@@ -14,9 +18,12 @@ mod_departementui <- function(id){
         dygraphOutput(ns("dy"))
       )
     )
-    )
   }
 
+#' @importFrom dplyr summarise filter
+#' @importFrom tidyr spread
+#' @importFrom dygraphs renderDygraph dygraph
+#' @importFrom dplyr filter group_by summarise
 mod_departement <- function(input, output, session){
   ns <- session$ns
 

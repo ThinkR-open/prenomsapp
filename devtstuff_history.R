@@ -57,14 +57,12 @@ usethis::use_test("app")
 
 # Dependencies
 usethis::use_package("shiny")
-usethis::use_package("DT")
-usethis::use_package("stats")
-usethis::use_package("graphics")
 usethis::use_package("dplyr")
 usethis::use_package("tidyr")
 usethis::use_package("dygraphs")
 usethis::use_package("plotly")
 usethis::use_package("ggplot2")
+usethis::use_package("shinyalert")
 
 # Reorder your DESC
 

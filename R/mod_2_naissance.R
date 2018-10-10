@@ -1,3 +1,8 @@
+#' @importFrom dygraphs dygraphOutput
+#' @importFrom shiny h3 tagList NS sliderInput checkboxInput
+#' @importFrom shinyalert useShinyalert
+#' @importFrom skeleton sk_col
+
 mod_naissanceui <- function(id){
   ns <- NS(id)
   tagList(
@@ -13,6 +18,12 @@ mod_naissanceui <- function(id){
     )
     )
   }
+
+#' @importFrom dplyr group_by summarise filter
+#' @importFrom tidyr spread
+#' @importFrom dygraphs renderDygraph dygraph
+#' @importFrom shiny reactiveValues observeEvent
+#' @importFrom shinyalert shinyalert
 
 mod_naissance <- function(input, output, session){
   ns <- session$ns
