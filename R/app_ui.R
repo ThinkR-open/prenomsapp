@@ -7,7 +7,7 @@ app_ui <- function() {
     includeCSS(system.file("www/loader.css", package = "prenomsapp")),
     tags$style(".header { margin-top: 4em; }"),
     # Header
-    sk_header(title = "Baby names in France - 1900:2016"),
+    sk_header(title = "Baby names in France - 1900:2017"),
     sk_nav(
       sk_nav_item("one", "Popularity over time"),
       sk_nav_item("two", "Birth"),

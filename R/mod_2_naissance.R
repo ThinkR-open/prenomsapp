@@ -9,7 +9,7 @@ mod_naissanceui <- function(id){
     sk_col(
       ns("Choix"), width = 3,
       h3("Select a daterange"),
-      sliderInput(ns("choix"), "Dates:", value = c(1900, 2016), min = 1900, max = 2016),
+      sliderInput(ns("choix"), "Dates:", value = c(1900, 2017), min = 1900, max = 2017),
       checkboxInput(ns("sexe"), "Group by sex?", FALSE)
     ),
     sk_col(
