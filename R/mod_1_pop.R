@@ -39,6 +39,7 @@ mod_popuui <- function(id){
 #' @importFrom dygraphs dygraph renderDygraph
 #' @importFrom shiny reactiveValues observeEvent
 #' @importFrom shinyalert shinyalert
+#' @importFrom prenomsapp capword
 
 mod_popu <- function(input, output, session){
 
@@ -46,8 +47,8 @@ mod_popu <- function(input, output, session){
   choice <- reactiveValues(prenom = "Colin")
 
   observeEvent(input$go, {
-    if (input$choix %in% prenomsapp::prenoms_uniques){
-      choice$prenom <- input$choix
+    if (capwords(input$choix) %in% prenomsapp::prenoms_uniques){
+      choice$prenom <- capwords(input$choix)
 
     } else {
       shinyalert("Name not found",
@@ -57,7 +58,7 @@ mod_popu <- function(input, output, session){
 
   base_prenom <- reactive({
     prenoms::prenoms %>%
-      filter(name ==  choice$prenom)
+      filter(name ==  capwords(choice$prenom))
     })
 
   output$dy <- renderDygraph({
