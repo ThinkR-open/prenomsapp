@@ -37,7 +37,7 @@ mod_popu <- function(input, output, session){
       choice$prenom <- input$choix
     } else {
       shinyalert("Name not found",
-                 "Sorry, this name is not in the database :/", type = "error")
+                 "Sorry, this name is not in the database...", type = "error")
     }
   })
 
