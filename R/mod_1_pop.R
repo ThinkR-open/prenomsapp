@@ -10,8 +10,12 @@ mod_popuui <- function(id){
       ns("one_col"),
       width = 3,
       h3("Select a name"),
-      textInput(ns("choix"), "Name",
-                value = "Colin"),
+      selectInput(ns("choix"), "Name",
+                value = "Colin",choices = unique(prenoms::prenoms$name)),
+      # textInput(ns("choix"), "Name",
+      #           value = "Colin"),
+
+
       tagAppendAttributes(checkboxInput(ns("dep"), "Filter by department?", FALSE),
                           onclick = glue('showIfChecked("{ns("dep")}", "#{ns("depchoicediv")}")')
       ),
