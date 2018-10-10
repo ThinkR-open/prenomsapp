@@ -7,7 +7,7 @@ mod_tableui <- function(id){
     sk_col(
       ns("Choix"),
       width = 3,
-      h3("Choose a Name"),
+      h3("Select a Name"),
       includeScript(system.file("www/sic.js", package = "prenomsapp")),
       textInput(ns("choix"), "Name:", value = "Colin"),
       tagAppendAttributes(checkboxInput(ns("dep"), "Filter by department?", FALSE),

@@ -8,7 +8,7 @@ mod_naissanceui <- function(id){
   tagList(
     sk_col(
       ns("Choix"), width = 3,
-      h3("Choose a daterange"),
+      h3("Select a daterange"),
       sliderInput(ns("choix"), "Dates:", value = c(1900, 2016), min = 1900, max = 2016),
       checkboxInput(ns("sexe"), "Group by sex?", FALSE)
     ),

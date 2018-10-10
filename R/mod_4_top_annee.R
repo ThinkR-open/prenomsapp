@@ -7,7 +7,7 @@ mod_mod_top_anneeuiui <- function(id) {
       sk_col(
         ns("Choix"),
         width = 3,
-        h3("Choose a year"),
+        h3("Select a year"),
         includeScript(system.file("www/sic.js", package = "prenomsapp")),
         selectInput(ns("choix"), "Year:", choices = 1900:2017, selected = 1900),
         # browser(),

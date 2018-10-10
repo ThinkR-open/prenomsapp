@@ -8,7 +8,7 @@ mod_departementui <- function(id){
     tagList(
       sk_col(
         ns("Choix"), width = 3,
-        h3("Choose a department"),
+        h3("Select a department"),
         selectInput(ns("dep"), "Department", choices = prenoms::departements$code_insee),
         sliderInput(ns("choix"), "Dates :", value = c(1900, 2016), min = 1900, max = 2016),
         checkboxInput(ns("sexe"), "Group by sex?", FALSE)
