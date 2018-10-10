@@ -1,0 +1,30 @@
+Package: prenomsapp
+Title: A Shiny App for French Names
+Version: 0.1.2
+Authors@R: person("Colin", "Fay", email = "colin@thinkr.fr", role = c("aut", "cre"))
+Description: A Shiny App for Baby Names.
+License: GPL-3
+Imports:
+    DT,
+    glue,
+    graphics,
+    shiny,
+    skeleton,
+    stats,
+    dplyr,
+    tidyr,
+    dygraphs,
+    magrittr,
+    plotly,
+    ggplot2
+Remotes: 
+  Thinkr-open/prenoms, 
+  ColinFay/skeleton
+Suggests:
+    testthat,
+    knitr,
+    rmarkdown
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+VignetteBuilder: knitr
