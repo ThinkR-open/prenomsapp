@@ -39,7 +39,6 @@ mod_popuui <- function(id){
 #' @importFrom dygraphs dygraph renderDygraph
 #' @importFrom shiny reactiveValues observeEvent
 #' @importFrom shinyalert shinyalert
-#' @importFrom prenomsapp capword
 
 mod_popu <- function(input, output, session){
 
