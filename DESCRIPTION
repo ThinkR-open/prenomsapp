@@ -1,6 +1,6 @@
 Package: prenomsapp
 Title: A Shiny App for French Names
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: person("Colin", "Fay", email = "colin@thinkr.fr", role = c("aut", "cre"))
 Description: A Shiny App for Baby Names.
 License: GPL-3
