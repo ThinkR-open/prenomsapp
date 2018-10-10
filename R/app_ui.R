@@ -13,6 +13,7 @@ app_ui <- function() {
       sk_nav_item("two", "Birth"),
       sk_nav_item("three", "By department"),
       sk_nav_item("four", "Top Name"),
+      sk_nav_item("five", "Raw data"),
       sk_nav_item("about", "About")
     ),
     sk_row(
@@ -30,6 +31,10 @@ app_ui <- function() {
     sk_row(
       "four",
       mod_mod_top_anneeuiui("mod_mod_top_anneeuiui")
+    ),
+    sk_row(
+      "five",
+      mod_tableui("mod_tableui")
     ),
     sk_row(
       "about",

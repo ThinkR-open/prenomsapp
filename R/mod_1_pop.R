@@ -12,7 +12,15 @@ mod_popuui <- function(id){
       h3("Select a name"),
       textInput(ns("choix"), "Name",
                 value = "Colin"),
-      actionButton(ns("go"), "Render")
+      tagAppendAttributes(checkboxInput(ns("dep"), "Filter by department?", FALSE),
+                          onclick = glue('showIfChecked("{ns("dep")}", "#{ns("depchoicediv")}")')
+      ),
+      tags$div(
+        id = ns("depchoicediv"),
+        selectInput(ns("depchoice"), "Department", choices = prenoms::departements$code_insee)
+      ),
+      actionButton(ns("go"), "Render"),
+      tags$script(glue("$('#{ns('depchoicediv')}').hide();"))
     ),
     sk_col(
       ns("one_col"),
@@ -32,9 +40,11 @@ mod_popu <- function(input, output, session){
 
   ns <- session$ns
   choice <- reactiveValues(prenom = "Colin")
+
   observeEvent(input$go, {
     if (input$choix %in% prenomsapp::prenoms_uniques){
       choice$prenom <- input$choix
+
     } else {
       shinyalert("Name not found",
                  "Sorry, this name is not in the database...", type = "error")
@@ -42,9 +52,10 @@ mod_popu <- function(input, output, session){
   })
 
   output$dy <- renderDygraph({
+    f <- prenoms::prenoms %>%
+      filter(name ==  choice$prenom)
 
-    prenoms::prenoms %>%
-        filter(name ==  choice$prenom) %>%
+    f %>%
         group_by(year,name) %>%
         summarise(total = sum(n))%>%
         spread(key = name,value =total) %>%

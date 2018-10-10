@@ -57,6 +57,7 @@ usethis::use_test("app")
 
 # Dependencies
 usethis::use_package("shiny")
+usethis::use_package("DT")
 usethis::use_package("dplyr")
 usethis::use_package("tidyr")
 usethis::use_package("dygraphs")

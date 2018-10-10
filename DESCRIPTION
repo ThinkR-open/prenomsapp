@@ -14,7 +14,8 @@ Imports:
     magrittr,
     plotly,
     ggplot2,
-    shinyalert
+    shinyalert,
+    DT
 Remotes: 
   Thinkr-open/prenoms, 
   ColinFay/skeleton
