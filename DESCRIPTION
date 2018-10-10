@@ -5,7 +5,6 @@ Authors@R: person("Colin", "Fay", email = "colin@thinkr.fr", role = c("aut", "cr
 Description: A Shiny App for Baby Names.
 License: GPL-3
 Imports:
-    DT,
     glue,
     graphics,
     shiny,

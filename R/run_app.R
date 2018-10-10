@@ -3,8 +3,6 @@
 #'
 #' @export
 #' @importFrom shiny shinyApp
-#' @import promises
-#' @import future
 #'
 #' @examples
 #'
@@ -15,6 +13,5 @@
 #' }
 #'
 run_app <- function() {
-  plan(multiprocess)
   shinyApp(ui = app_ui(), server = app_server)
 }

@@ -2,11 +2,9 @@
 
 export("%>%")
 export(run_app)
-import(future)
 import(ggplot2)
 import(glue)
 import(plotly)
-import(promises)
 import(shiny)
 import(skeleton)
 importFrom(dplyr,filter)
