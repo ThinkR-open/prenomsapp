@@ -11,7 +11,7 @@ mod_popuui <- function(id){
       width = 3,
       h3("Select a name"),
       selectInput(ns("choix"), "Name",
-                value = "Colin",choices = unique(prenoms::prenoms$name)),
+                selected = "Colin",choices = unique(prenoms::prenoms$name)),
       # textInput(ns("choix"), "Name",
       #           value = "Colin"),
 
