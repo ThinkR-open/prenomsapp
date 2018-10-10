@@ -1,3 +1,5 @@
+#' @importFrom shiny includeMarkdown tagList
+#' @importFrom skeleton sk_col
 mod_aboutui <- function(id){
   ns <- NS(id)
   tagList(
@@ -14,8 +16,4 @@ mod_aboutui <- function(id){
       )
       )
     )
-}
-
-mod_about <- function(input, output, session){
-  ns <- session$ns
 }
