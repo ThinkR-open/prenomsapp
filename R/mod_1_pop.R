@@ -66,13 +66,15 @@ mod_popu <- function(input, output, session){
     if ( input$dep){
       f <- f %>% filter( dpt == input$depchoice)
       }
-
-
+    validate(need(nrow(f) != 0,"No data for this department"))
     f %>%
         group_by(year,name) %>%
         summarise(total = sum(n))%>%
         spread(key = name,value =total) %>%
         dygraph()
+
+
+
   })
 
 }
