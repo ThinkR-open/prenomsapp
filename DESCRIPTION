@@ -16,7 +16,8 @@ Imports:
     ggplot2,
     shinyalert,
     DT,
-    pkgload
+    pkgload,
+    prenoms (>= 0.4.0)
 Remotes: 
   Thinkr-open/prenoms, 
   ColinFay/skeleton

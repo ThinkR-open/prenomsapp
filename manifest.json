@@ -2273,6 +2273,46 @@
         "RemoteSha": "1.0.0"
       }
     },
+    "prenoms": {
+      "Source": "github",
+      "Repository": null,
+      "GithubRepo": "prenoms",
+      "GithubUsername": "thinkr-open",
+      "GithubRef": "HEAD",
+      "GithubSha1": "b3c22a7949415c23d56dd9ee127dcb9edce6b30d",
+      "description": {
+        "Type": "Package",
+        "Package": "prenoms",
+        "Title": "French Baby Names 1900-2020",
+        "Version": "0.4.0",
+        "Authors@R": "c(\n    person(\n      given = \"Antoine\", \n      family = \"Languillaume\", \n      role = \"aut\", \n      email = \"antoine@thinkr.fr\", \n      comment = c(ORCID = \"0000-0001-9843-5632\")\n    ),\n    person(\"Romain\", \"Francois\", , \"romain@purrple.cat\", role = c(\"aut\", \"cre\"),\n           comment = c(ORCID = \"0000-0002-2444-4226\")),\n    person(\"Florian\", \"Gaudin-Delrieu\", , \"florian.gaudindelrieu@gmail.com\", role = \"aut\"),\n    person(\"Vincent\", \"Guyader\", , \"vincent@thinkr.fr\", role = \"aut\",\n           comment = c(ORCID = \"0000-0003-0671-9270\")),\n    person(\n      given = \"Florence\", \n      family = \"Mounier\", \n      role = \"aut\", \n      email = \"florence@thinkr.fr\", \n      comment = c(ORCID = \"0000-0001-8916-7007\")\n    ),\n    person(\"ThinkR\", role = \"cph\")\n  )",
+        "Description": "French Baby Names 1900-2020.",
+        "License": "MIT + file LICENSE",
+        "Depends": "R (>= 3.5.0)",
+        "Suggests": "dplyr, ggplot2, purrr, testthat (>= 3.0.0), tidyr",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "LazyDataCompression": "xz",
+        "RoxygenNote": "7.1.2",
+        "NeedsCompilation": "no",
+        "Packaged": "2023-01-23 13:44:00 UTC; colinfay",
+        "Author": "Antoine Languillaume [aut] (<https://orcid.org/0000-0001-9843-5632>),\n  Romain Francois [aut, cre] (<https://orcid.org/0000-0002-2444-4226>),\n  Florian Gaudin-Delrieu [aut],\n  Vincent Guyader [aut] (<https://orcid.org/0000-0003-0671-9270>),\n  Florence Mounier [aut] (<https://orcid.org/0000-0001-8916-7007>),\n  ThinkR [cph]",
+        "Maintainer": "Romain Francois <romain@purrple.cat>",
+        "Built": "R 4.2.2; ; 2023-01-23 13:44:02 UTC; unix",
+        "RemoteType": "github",
+        "RemoteHost": "api.github.com",
+        "RemoteRepo": "prenoms",
+        "RemoteUsername": "thinkr-open",
+        "RemotePkgRef": "thinkr-open/prenoms",
+        "RemoteRef": "HEAD",
+        "RemoteSha": "b3c22a7949415c23d56dd9ee127dcb9edce6b30d",
+        "GithubRepo": "prenoms",
+        "GithubUsername": "thinkr-open",
+        "GithubRef": "HEAD",
+        "GithubSHA1": "b3c22a7949415c23d56dd9ee127dcb9edce6b30d"
+      }
+    },
     "processx": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -3539,7 +3579,7 @@
       "checksum": "a1e54dbebbabbf734a169c5325783290"
     },
     "DESCRIPTION": {
-      "checksum": "5fd3a156a8acbc5ac49223d210491016"
+      "checksum": "183e383804850f9f0e94a1dd8b505507"
     },
     "devtstuff_history.R": {
       "checksum": "e29b874b60402c2ebdff8b5fa1de453d"
