@@ -15,7 +15,8 @@ Imports:
     plotly,
     ggplot2,
     shinyalert,
-    DT
+    DT,
+    pkgload
 Remotes: 
   Thinkr-open/prenoms, 
   ColinFay/skeleton
