@@ -559,6 +559,44 @@
         "RemoteSha": "1.8.1"
       }
     },
+    "config": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "GithubRepo": null,
+      "GithubUsername": null,
+      "GithubRef": null,
+      "GithubSha1": null,
+      "description": {
+        "Package": "config",
+        "Type": "Package",
+        "Title": "Manage Environment Specific Configuration Values",
+        "Version": "0.3.1",
+        "Authors@R": "c(\n  person(\"JJ\", \"Allaire\", role = c(\"aut\"), email = \"jj@rstudio.com\"),\n  person(\"Andrie\", \"de Vries\", role = \"cre\", email = \"apdevries@gmail.com\"),\n  person(\"RStudio\", role = c(\"cph\", \"fnd\")))",
+        "Imports": "yaml (>= 2.1.19)",
+        "Suggests": "testthat, knitr, rmarkdown, covr, spelling",
+        "Description": "Manage configuration values across multiple environments (e.g.\n  development, test, production). Read values using a function that determines\n  the current environment and returns the appropriate value.",
+        "License": "GPL-3",
+        "URL": "https://github.com/rstudio/config",
+        "BugReports": "https://github.com/rstudio/config/issues",
+        "RoxygenNote": "7.1.1",
+        "VignetteBuilder": "knitr",
+        "Encoding": "UTF-8",
+        "Language": "en-US",
+        "NeedsCompilation": "no",
+        "Packaged": "2020-12-15 13:05:30 UTC; apdev",
+        "Author": "JJ Allaire [aut],\n  Andrie de Vries [cre],\n  RStudio [cph, fnd]",
+        "Maintainer": "Andrie de Vries <apdevries@gmail.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2020-12-17 11:00:06 UTC",
+        "Built": "R 4.2.0; ; 2022-04-25 05:55:15 UTC; unix",
+        "RemoteType": "standard",
+        "RemotePkgRef": "config",
+        "RemoteRef": "config",
+        "RemoteRepos": "https://cran.rstudio.com",
+        "RemotePkgPlatform": "x86_64-apple-darwin17.0",
+        "RemoteSha": "0.3.1"
+      }
+    },
     "cpp11": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -1881,6 +1919,44 @@
         "RemoteRepos": "https://cran.rstudio.com",
         "RemotePkgPlatform": "x86_64-apple-darwin17.0",
         "RemoteSha": "2.0.3"
+      }
+    },
+    "markdown": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "GithubRepo": null,
+      "GithubUsername": null,
+      "GithubRef": null,
+      "GithubSha1": null,
+      "description": {
+        "Package": "markdown",
+        "Type": "Package",
+        "Title": "Render Markdown with 'commonmark'",
+        "Version": "1.5",
+        "Authors@R": "c(\n   person(\"JJ\", \"Allaire\", role = \"aut\"),\n   person(\"Jeffrey\", \"Horner\", role = \"aut\"),\n   person(\"Yihui\", \"Xie\", role = c(\"aut\", \"cre\"), email = \"xie@yihui.name\", comment = c(ORCID = \"0000-0003-0645-5666\")),\n   person(\"Henrik\", \"Bengtsson\", role = \"ctb\"),\n   person(\"Jim\", \"Hester\", role = \"ctb\"),\n   person(\"Yixuan\", \"Qiu\", role = \"ctb\"),\n   person(\"Kohske\", \"Takahashi\", role = \"ctb\"),\n   person(\"Adam\", \"November\", role = \"ctb\"),\n   person(\"Nacho\", \"Caballero\", role = \"ctb\"),\n   person(\"Jeroen\", \"Ooms\", role = \"ctb\"),\n   person(\"Thomas\", \"Leeper\", role = \"ctb\"),\n   person(\"Joe\", \"Cheng\", role = \"ctb\"),\n   person(\"Andrzej\", \"Oles\", role = \"ctb\"),\n   person(family = \"RStudio\", role = \"cph\")\n   )",
+        "Description": "Render Markdown to full HTML documents with the 'commonmark'\n    package. Markdown is a plain-text formatting\n    syntax that can be converted to 'XHTML' or other formats. See\n    <https://en.wikipedia.org/wiki/Markdown> for more information about Markdown.",
+        "Depends": "R (>= 2.11.1)",
+        "Imports": "utils, commonmark, xfun (>= 0.35)",
+        "Suggests": "knitr, rmarkdown (>= 2.18), yaml, RCurl",
+        "License": "GPL-2",
+        "URL": "https://github.com/rstudio/markdown",
+        "BugReports": "https://github.com/rstudio/markdown/issues",
+        "VignetteBuilder": "knitr",
+        "RoxygenNote": "7.2.3",
+        "Encoding": "UTF-8",
+        "NeedsCompilation": "no",
+        "Packaged": "2023-01-31 15:34:10 UTC; yihui",
+        "Author": "JJ Allaire [aut],\n  Jeffrey Horner [aut],\n  Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>),\n  Henrik Bengtsson [ctb],\n  Jim Hester [ctb],\n  Yixuan Qiu [ctb],\n  Kohske Takahashi [ctb],\n  Adam November [ctb],\n  Nacho Caballero [ctb],\n  Jeroen Ooms [ctb],\n  Thomas Leeper [ctb],\n  Joe Cheng [ctb],\n  Andrzej Oles [ctb],\n  RStudio [cph]",
+        "Maintainer": "Yihui Xie <xie@yihui.name>",
+        "Repository": "CRAN",
+        "Date/Publication": "2023-01-31 17:20:05 UTC",
+        "Built": "R 4.2.0; ; 2023-02-01 13:02:06 UTC; unix",
+        "RemoteType": "standard",
+        "RemotePkgRef": "markdown",
+        "RemoteRef": "markdown",
+        "RemoteRepos": "https://cran.rstudio.com",
+        "RemotePkgPlatform": "x86_64-apple-darwin17.0",
+        "RemoteSha": "1.5"
       }
     },
     "memoise": {
@@ -3579,7 +3655,7 @@
       "checksum": "a1e54dbebbabbf734a169c5325783290"
     },
     "DESCRIPTION": {
-      "checksum": "183e383804850f9f0e94a1dd8b505507"
+      "checksum": "a05f80a338827150a39f3d9de914bd09"
     },
     "devtstuff_history.R": {
       "checksum": "e29b874b60402c2ebdff8b5fa1de453d"
@@ -3639,7 +3715,7 @@
       "checksum": "731efddfe5a98fba40c84369501454cf"
     },
     "NAMESPACE": {
-      "checksum": "ae905ddecf8c32a3e6183dd741de139d"
+      "checksum": "cd348cef33d1a0a92dbcfa395716ce05"
     },
     "R/_disable_autoload.R": {
       "checksum": "1178c335d6c11555fd1c4ec6098dfee6"
